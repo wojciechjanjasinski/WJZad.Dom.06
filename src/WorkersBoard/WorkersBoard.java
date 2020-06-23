@@ -3,14 +3,14 @@ package WorkersBoard;
 public class WorkersBoard {
     public static void main(String[] args) {
         WorkerCreator workerCreator = new WorkerCreator();
-        String[] workersBoard = new String[3];
-        workersBoard[0] = workerCreator.createWorker().getFirstName() + workerCreator.createWorker().getLastName() + workerCreator.createWorker().getSalary();
-        workersBoard[1] = workerCreator.createWorker().getFirstName() + workerCreator.createWorker().getLastName() + workerCreator.createWorker().getSalary();
-        workersBoard[2] = workerCreator.createWorker().getFirstName() + workerCreator.createWorker().getLastName() + workerCreator.createWorker().getSalary();
-        System.out.println(workersBoard[0]);
-        System.out.println(workersBoard[1]);
-        System.out.println(workersBoard[2]);
-
-
+        Worker[] workers = new Worker[3];
+        workers[0] = workerCreator.createWorker();
+        workers[1] = workerCreator.createWorker();
+        workers[2] = workerCreator.createWorker();
+        System.out.println(workers[0]);
+        System.out.println(workers[1]);
+        System.out.println(workers[2]);
+        double salarySum = workers[0].getSalary() + workers[1].getSalary() + workers[2].getSalary();
+        System.out.println("Firma XYZ potrzebuje łącznie " + salarySum + " PLN na wypłatę za miesiąc pracy " + workers.length + " pracowników");
     }
 }

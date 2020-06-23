@@ -7,11 +7,9 @@ public class WorkerCreator {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Podaj prosze imię pracownika: ");
         String firstName = scanner.nextLine();
-        scanner.nextLine();
 
         System.out.print("Podaj prosze nazwisko pracownika: ");
         String lastName = scanner.nextLine();
-        scanner.nextLine();
 
         System.out.print("Podaj proszę wysokość wynagrodzenia ");
         double salary = scanner.nextDouble();
