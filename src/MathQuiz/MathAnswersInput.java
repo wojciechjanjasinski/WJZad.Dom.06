@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class MathAnswersInput {
     public MathQuestions mathUserAnswers (){
+        MathNumbers mathNumbers = new MathNumbers();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ile wynosi wynik mnożenia 3 × 5");
         double answerOne = scanner.nextDouble();
@@ -13,6 +14,6 @@ public class MathAnswersInput {
 
         System.out.println("Ile wynosi pierwiastek kwadratowy z liczby 15129?");
         double answerThree = scanner.nextDouble();
-        return new MathQuestions(answerOne, answerTwo, answerThree);
+        return new MathQuestions(mathNumbers.answerOne, mathNumbers.answerTwo, mathNumbers.answerThree);
     }
 }

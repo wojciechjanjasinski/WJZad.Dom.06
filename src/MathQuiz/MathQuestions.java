@@ -4,6 +4,8 @@ import static java.lang.Math.pow;
 
 public class MathQuestions {
 
+    MathNumbers mathNumbers;
+
     public MathQuestions(double answerOne, double answerTwo, double answerTwo1) {
     }
 
@@ -11,15 +13,18 @@ public class MathQuestions {
 
     }
 
-    boolean questionOne(double answerOne) {
-        return 3 * 5 == answerOne;
+    boolean questionOne() {
+        return 3 * 5 == mathNumbers.answerOne;
     }
 
-    boolean questionTwo(double answerTwo) {
-        return pow(12, 2) == answerTwo;
+    boolean questionTwo() {
+        return pow(12, 2) == mathNumbers.answerTwo;
     }
 
-    boolean questionThree(double answerThree) { return pow(15129, 2) == answerThree; }
+    boolean questionThree() {
+        return pow(15129, 2) == mathNumbers.answerOne;
+
+    }
 
 
 }
