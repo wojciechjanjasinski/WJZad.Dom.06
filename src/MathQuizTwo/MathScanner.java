@@ -1,4 +1,4 @@
-package MathQuiz;
+package MathQuizTwo;
 
 import java.util.Scanner;
 
