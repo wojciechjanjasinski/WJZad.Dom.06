@@ -14,5 +14,10 @@ public class Company {
         double salary = scanner.nextDouble();
         return new Worker(firstName, lastName, salary);
     }
+    int get (){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj proszę numer pracownika:");
+        return scanner.nextInt();
+    }
 
 }
